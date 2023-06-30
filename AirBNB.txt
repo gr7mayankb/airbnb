@@ -1,0 +1,14 @@
+in userContext.jsx we are using [ready,setReady] use state becoz if we dont use it then , even the user if already logged in
+it will take user to login page becoz fetching data from mongo takes time in becoz of that even before fetching data it will redirect to
+login page so to avoid that we are using ready and setReady useState.
+
+
+  <Route path='/account/:subpage?' element={<AccountPage />} />
+we are using ? here becoz in case if subpage is undefined then it will bydefault go to /account page
+
+
+
+
+
+What is FormData () in react?
+The formdata object lets you compile a set of key/value pairs to send using XMLHttpRequest.In a simply term formdata provide an alternative of bundling data(object),and sending it to the server without using basic html form tag. Think of it as a way to replicate what a html form does
